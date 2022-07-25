@@ -1,4 +1,4 @@
-# Sawangjit et al. (2022)
+# Sawangjit et al. (2022): Two distinct ways to form long-term object-recognition memory during sleep and wakefulness
 # Mixed model statistical analyses for primary outcome variables (discrimination ratio, change in mean rearing duration)
 # By: Max Harkotte
 # Contact: maximilian.harkotte@gmail.com

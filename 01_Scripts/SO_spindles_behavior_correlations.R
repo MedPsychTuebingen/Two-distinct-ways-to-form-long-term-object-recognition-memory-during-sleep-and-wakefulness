@@ -1,8 +1,9 @@
-# Sawangjit et al. (2021): 1 week remote novel object recognition (NOR) memory task
-# Mixed model statistical analyses for primary outcome variables (discrimination ratio, change in mean rearing duration)
+# Sawangjit et al. (2022): Two distinct ways to form long-term object-recognition memory during sleep and wakefulness
+# Statistical analysis of behavior ~ SO and spindles
 # By: Max Harkotte
 # Contact: maximilian.harkotte@gmail.com
-# Last update: June 2021
+# Last update: July 2022
+
 
 rm(list = ls()) # clear workspace
 cat("\014") # clear console
@@ -12,7 +13,7 @@ library(dplyr)
 library(ggpubr)
 
 # 1 - Source file ---------------------------------------------------------
-dataPath <- "Z:/Max/03_Sleep_vs_wake_consolidation/1wk_NOR_new/Behavior/Data"
+dataPath <- "add_path"
 setwd(dataPath)
 
 

@@ -1,8 +1,8 @@
-# Sawangjit et al. (2021): 1 week remote novel object recognition (NOR) memory task
-# Correlation analysis for slow oscillations/spindle properties (Mean duration, Mean power, Number)
+# Sawangjit et al. (2022): Two distinct ways to form long-term object-recognition memory during sleep and wakefulness
+# Statistical analysis of behavior ~ coupled SO-spindle events
 # By: Max Harkotte
 # Contact: maximilian.harkotte@gmail.com
-# Last update: January 2021
+# Last update: July 2022
 
 rm(list = ls()) # clear workspace
 cat("\014") # clear console
@@ -18,20 +18,20 @@ library(psych)
 library(cocor)
 
 # 1 - Source file ---------------------------------------------------------
-dataPath <- "Z:/Max/03_Sleep_vs_wake_consolidation/1wk_NOR_new/Behavior/"
+dataPath <- "add_path"
 setwd(dataPath)
 
 # 2 - Read in data --------------------------------------------------------
 coupling_SO_left <-
-  read.csv2(paste0(dataPath, "Data/Coupling_SO_EEGLeft.csv"), sep = ",")
+  read.csv2(paste0(dataPath, "Coupling_SO_EEGLeft.csv"), sep = ",")
 coupling_SO_right <-
-  read.csv2(paste0(dataPath, "Data/Coupling_SO_EEGRight.csv"), sep = ",")
+  read.csv2(paste0(dataPath, "Coupling_SO_EEGRight.csv"), sep = ",")
 
 spindles_left <-
-  read.csv2(paste0(dataPath, "Data/For Anuck/Spindles_Behavior_EEGLeft.csv"),
+  read.csv2(paste0(dataPath, "Spindles_Behavior_EEGLeft.csv"),
             sep = ",")
 spindles_right <-
-  read.csv2(paste0(dataPath, "Data/For Anuck/Spindles_Behavior_EEGRight.csv"),
+  read.csv2(paste0(dataPath, "Spindles_Behavior_EEGRight.csv"),
             sep = ",")
 
 # Data prep ---------------------------------------------------------------

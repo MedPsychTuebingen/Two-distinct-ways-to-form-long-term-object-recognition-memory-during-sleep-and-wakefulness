@@ -1,7 +1,7 @@
 %% Spindle and SO detections for frontal EEG screw electrodes
 clear
 %% Paths
-dirProject      = 'Y:\Max\1wk_NOR_new\';
+dirProject      = 'add_path';
 addpath(strcat(dirProject, 'Scripts'));
 %% Basics
 fsample         = 1000;
